@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import styled from "styled-components";
 import {Button} from "../../../components/Button.tsx";
@@ -20,7 +20,7 @@ export const Contacts = () => {
                     <Button type={'submit'}>Send</Button>
                 </StyledForm>
                 <Map src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105883.81977075207!2d-118.38638171008627!3d33.970196961709775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b7dbd41fb7e9%3A0x24a2ff6a792f2618!2sSouth%20Los%20Angeles%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2ssk!4v1757957768009!5m2!1sen!2ssk'}
-                     laoding={'lazy'}
+                     loading={'lazy'}
                      referrerPolicy={'no-referrer-when-downgrade'}
                      allowFullScreen
                 />

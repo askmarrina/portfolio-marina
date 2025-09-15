@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Slide} from '../slider/slide/Slide.tsx'
 import styled from "styled-components";
 import {FlexWrapper} from "../FlexWrapper.tsx";

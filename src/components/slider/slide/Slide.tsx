@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styled from "styled-components";
 import {Icon} from '../../icon/Icon.tsx'
 import rating from '../../../assets/images/rating.png'
