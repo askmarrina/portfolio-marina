@@ -57,7 +57,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: #FB3F5C;
-    min-height: 10vh;
+    min-height: 20vh;
     color: white;
 `
 
