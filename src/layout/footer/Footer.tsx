@@ -8,7 +8,7 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction={"column"} align={'center'} gap={'20px'}>
+            <FlexWrapper direction={"column"} align={'center'} gap={'20px'} wrap={'wrap'}>
                 <ContactWrapper>
                     <Phone>
                         <Image src={phone}/>

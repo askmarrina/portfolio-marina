@@ -30,6 +30,6 @@ const Title = styled.h3`
 
 `
 
-const Text = styled.p`
+const Text = styled.span`
 
 `

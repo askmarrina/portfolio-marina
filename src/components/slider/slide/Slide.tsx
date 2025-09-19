@@ -31,11 +31,11 @@ const Image = styled.img`
     height: 104px;
 `
 
-const Name = styled.h5`
+const Name = styled.h4`
 
 `
 
-const Customer = styled.span`
+const Customer = styled.h5`
     color: red;
 `
 const Text = styled.p`

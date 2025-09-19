@@ -6,7 +6,7 @@ import photo from '../../../assets/images/Photo.webp'
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align={'center'} justify={'space-around'}>
+            <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                 <div>
                     <span>Hello,</span>
                     <h2>I'm Daniella Adams</h2>

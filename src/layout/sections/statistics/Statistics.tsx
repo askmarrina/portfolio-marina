@@ -1,23 +1,28 @@
 
 import styled from "styled-components";
+import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 
 export const Statistics = () => {
     return (
         <StyledStatistics>
-
+            <FlexWrapper justify={'space-around'} wrap={'wrap'} gap={'50px'} align={'center'}>
                 <StatisticsItem>
-                    <div>81</div>
+                    <span>81</span>
                     <div>Happy Customers</div>
                 </StatisticsItem>
                 <StatisticsItem>
-                    <div>97+</div>
+                    <span>97+</span>
                     <div>Completed Projects</div>
                 </StatisticsItem>
                 <StatisticsItem>
-                    <div>50</div>
+                    <span>50</span>
                     <div>Awards won</div>
                 </StatisticsItem>
+            </FlexWrapper>
+
+
+
 
         </StyledStatistics>
     );

@@ -8,7 +8,7 @@ import {Icon} from "../../../components/icon/Icon.tsx";
 export const About = () => {
     return (
         <StyledAbout>
-            <FlexWrapper align={'center'} justify={'space-around'}>
+            <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                 <PhotoAbout src={photo}/>
                 <div>
                     <h2>I am a creative Graphic & UI Designer</h2>

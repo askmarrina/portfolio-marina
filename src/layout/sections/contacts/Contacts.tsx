@@ -8,7 +8,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <SectionTitle>Get in Touch</SectionTitle>
-            <FlexWrapper align={'flex-start'} justify={'space-around'}>
+            <FlexWrapper align={'flex-start'} justify={'space-around'} wrap={'wrap'}>
                 <StyledForm>
                     <FieldGroup>
                         <Label>Your Email Address</Label>
