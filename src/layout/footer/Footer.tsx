@@ -105,6 +105,10 @@ const ContactItem = styled.div`
     &:not(:first-child) {
         padding-left: 40px;
     }
+    
+    &:hover {
+        text-decoration: underline;
+    }
 `
 
 const Image = styled.img`

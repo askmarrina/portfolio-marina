@@ -8,7 +8,10 @@ type ButtonPropsType = {
 }
 
 export const Button = styled.button<ButtonPropsType>`
-    
+    transition: transform .2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
     
     ${props => props.primary && css <ButtonPropsType>`
         font-family: 'Nunito Sans', sans-serif;
