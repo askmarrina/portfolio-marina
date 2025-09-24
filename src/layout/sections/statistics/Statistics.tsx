@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {Theme} from "../../../styles/Theme.tsx";
 
 
 export const Statistics = () => {
@@ -9,15 +10,15 @@ export const Statistics = () => {
             <FlexWrapper justify={'space-around'} wrap={'wrap'} gap={'50px'} align={'center'}>
                 <StatisticsItem>
                     <span>81</span>
-                    <div>Happy Customers</div>
+                    <h3>Happy Customers</h3>
                 </StatisticsItem>
                 <StatisticsItem>
                     <span>97+</span>
-                    <div>Completed Projects</div>
+                    <h3>Completed Projects</h3>
                 </StatisticsItem>
                 <StatisticsItem>
                     <span>50</span>
-                    <div>Awards won</div>
+                    <h3>Awards won</h3>
                 </StatisticsItem>
             </FlexWrapper>
 
@@ -29,15 +30,30 @@ export const Statistics = () => {
 };
 
 const StyledStatistics = styled.section`
-    min-height: 30vh;
+    
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    background-color: #b3c5ea;
+    background-color: ${Theme.colors.secondaryBg};
     align-items: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 60px 0;
 `
 
 const StatisticsItem = styled.div`
     display: flex;
     flex-direction: column;
+    span {
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: ${Theme.colors.font};
+    }
+    
+    h3 {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: ${Theme.colors.font};
+    }
 `
