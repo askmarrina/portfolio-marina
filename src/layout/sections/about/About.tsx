@@ -3,9 +3,9 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import photo from '../../../assets/images/Photo.webp';
 import {Button} from "../../../components/Button.tsx";
-import {Icon} from "../../../components/icon/Icon.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {Theme} from "../../../styles/Theme.tsx";
+import {ProgressBarContainer} from "../../../components/progressBar/ProgressBarContainer.tsx";
 
 export const About = () => {
     return (
@@ -24,11 +24,13 @@ export const About = () => {
                             <a href=''><Button secondary>View Portfolio</Button></a>
                         </ButtonWrapper>
 
-                        <Icons>
-                            <a href=''><Icon iconId={'photoshop'}/></a>
-                            <a href=''><Icon iconId={'illustrator'}/></a>
-                            <a href=''><Icon iconId={'figma'}/></a>
-                        </Icons>
+                        <ProgressBarContainer>
+
+                        </ProgressBarContainer>
+
+
+
+
                     </AboutWrapper>
                 </FlexWrapper>
             </Container>
@@ -85,6 +87,7 @@ const ButtonWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-bottom: 65px;
 `
 
 const PhotoAbout = styled.img`
@@ -92,11 +95,7 @@ const PhotoAbout = styled.img`
     height: 452px;
     object-fit: cover;
 `
-const Icons = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+
 
 
 
