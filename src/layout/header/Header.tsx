@@ -5,6 +5,8 @@ import {Menu} from "../../components/Menu.tsx";
 import {Theme} from "../../styles/Theme.tsx";
 import {Container} from "../../components/Container.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
+
 
 export const Header = () => {
     return (
@@ -14,6 +16,7 @@ export const Header = () => {
                 <FlexWrapper justify="space-between" align="center">
                     <Logo/>
                     <Menu/>
+                    <MobileMenu/>
                 </FlexWrapper>
 
             </Container>
@@ -27,7 +30,15 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    margin-bottom: 100px;
+    
+    
+    @media ${Theme.media.tablet} {
+        width: 100%;
+    }
+
+    @media ${Theme.media.mobile} {
+        width: 100%;
+    }
 `
 
 const Heading = styled.h1`

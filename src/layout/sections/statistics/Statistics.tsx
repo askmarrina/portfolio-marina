@@ -2,12 +2,13 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Theme} from "../../../styles/Theme.tsx";
+import {font} from "../../../styles/Common.tsx";
 
 
 export const Statistics = () => {
     return (
         <StyledStatistics>
-            <FlexWrapper justify={'space-around'} wrap={'wrap'} gap={'50px'} align={'center'}>
+            <FlexWrapper justify={'space-around'} gap={'50px'} align={'center'}>
                 <StatisticsItem>
                     <span>81</span>
                     <h3>Happy Customers</h3>
@@ -21,10 +22,6 @@ export const Statistics = () => {
                     <h3>Awards won</h3>
                 </StatisticsItem>
             </FlexWrapper>
-
-
-
-
         </StyledStatistics>
     );
 };
@@ -37,7 +34,9 @@ const StyledStatistics = styled.section`
     background-color: ${Theme.colors.secondaryBg};
     align-items: center;
     font-family: 'Nunito', sans-serif;
-    padding: 60px 0;
+    padding: 60px 20px;
+    
+    
 `
 
 const StatisticsItem = styled.div`
@@ -48,6 +47,10 @@ const StatisticsItem = styled.div`
         font-size: 48px;
         text-transform: uppercase;
         color: ${Theme.colors.font};
+
+        @media (max-width: 800px) {
+            ${font({family: "'Nunito', sans-serif", weight: 700, Fmax: 36, Fmin: 11})}
+        }
     }
     
     h3 {
@@ -55,5 +58,11 @@ const StatisticsItem = styled.div`
         font-size: 36px;
         text-transform: uppercase;
         color: ${Theme.colors.font};
+
+        @media (max-width: 800px) {
+            ${font({family: "'Nunito', sans-serif", weight: 700, Fmax: 36, Fmin: 11})}
+        }
     }
+
+    
 `

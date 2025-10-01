@@ -37,6 +37,11 @@ const Image = styled.img`
     width: 330px;
     height: 330px;
     object-fit: cover;
+    aspect-ratio: 1/1;
+    @media ${Theme.media.mobile} {
+        max-width: 330px;
+        width: 100%;
+    }
 `
 const Title = styled.h3`
     font-family: 'Nunito', sans-serif;

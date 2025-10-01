@@ -37,6 +37,13 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     margin-bottom: 160px;
+    
+    ${Button} {
+        @media (max-width: 1085px) {
+            margin: 0 auto 50px;
+            
+    }
+    }
 `
 
 const StyledForm = styled.form`
@@ -86,5 +93,10 @@ const Map = styled.iframe`
     width: 512px;
     height: 506px;
     border: 0;
+    
+    @media ${Theme.media.mobile} {
+        max-width: 512px;
+        width: 100%;
+    }
 `
 

@@ -46,4 +46,8 @@ const Pagination = styled.div`
             margin-left: 10px;
         }
     }
+    
+    @media ${Theme.media.mobile} {
+        display: none;
+    }
 `

@@ -11,14 +11,14 @@ export const About = () => {
     return (
         <StyledAbout>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'} gap={'50px'}>
                     <PhotoWrapper>
                         <PhotoAbout src={photo}/>
                     </PhotoWrapper>
 
                     <AboutWrapper>
                         <h2>I am a creative Graphic & UI Designer</h2>
-                        <p>I’m a Graphics Designer,Designng has become my everyday affair. masting styles,grids cant be less interesting,Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>I’m a Graphics Designer,Designing has become my everyday affair. masting styles,grids cant be less interesting,Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <ButtonWrapper>
                             <a href=''><Button primary>Download CV</Button></a>
                             <a href=''><Button secondary>View Portfolio</Button></a>
@@ -27,10 +27,6 @@ export const About = () => {
                         <ProgressBarContainer>
 
                         </ProgressBarContainer>
-
-
-
-
                     </AboutWrapper>
                 </FlexWrapper>
             </Container>
@@ -53,10 +49,18 @@ const PhotoWrapper = styled.div`
         height: 432px;
         background-color: ${Theme.colors.linkColor};
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        //clip-path: polygon("M 92% 0 Q 100% 0 100% 8% L 8% 100% Q 0 100% 0 92% L 100% 92% Q 100% 100% 92% 100% Z");
         position: absolute;
         top: 70px;
         left: 15px;
         z-index: -1;
+        
+        @media ${Theme.media.mobile} {
+            width: 300px;
+            height: 335px;
+            left: 0;
+            top: 50px;
+        }
     }
 `
 
@@ -88,12 +92,22 @@ const ButtonWrapper = styled.div`
     align-items: center;
     gap: 40px;
     margin-bottom: 65px;
+    
+    @media ${Theme.media.mobile} {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 `
 
 const PhotoAbout = styled.img`
     width: 361px;
     height: 452px;
     object-fit: cover;
+
+    @media ${Theme.media.mobile} {
+        width: 280px;
+        height: 350px;
+    }
 `
 
 

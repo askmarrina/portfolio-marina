@@ -22,11 +22,22 @@ const StyledMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        
+            font-size: 18px;
         
     }
+
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
+    
+    
 `
 
-const Link = styled.a`
+export const Link = styled.a`
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;

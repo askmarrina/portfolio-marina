@@ -6,53 +6,69 @@ import {FlexWrapper} from "../FlexWrapper.tsx";
 export const ProgressBarContainer = () => {
     return (
         <div>
-            <TwoColumns>
-                <Column>
-                    <ProgressBar>
-                        <FlexWrapper>
-                            <Icon iconId={'photoshop'}/>
-                            <ProgressLine>
-                                <PercentLine className={'photoshop'}>
-                                </PercentLine>
-                            </ProgressLine>
-                        </FlexWrapper>
-                    </ProgressBar>
+            <StyledProgressBarContainer>
+                <TwoColumns>
+                    <Column>
+                        <ProgressBar>
+                            <FlexWrapper>
+                                <Icon iconId={'photoshop'}/>
+                                <ProgressLine>
+                                    <PercentLine className={'photoshop'}>
+                                    </PercentLine>
+                                </ProgressLine>
+                            </FlexWrapper>
+                        </ProgressBar>
 
-                    <ProgressBar>
-                        <FlexWrapper>
-                            <Icon iconId={'illustrator'}/>
-                            <ProgressLine>
-                                <PercentLine className={'illustrator'}>
-                                </PercentLine>
-                            </ProgressLine>
-                        </FlexWrapper>
-                    </ProgressBar>
-                </Column>
-                <Column>
-                    <ProgressBar>
-                        <FlexWrapper>
-                            <Icon iconId={'figma'}/>
-                            <ProgressLine>
-                                <PercentLine className={'figma'}>
-                                </PercentLine>
-                            </ProgressLine>
-                        </FlexWrapper>
-                    </ProgressBar>
-                </Column>
-            </TwoColumns>
+                        <ProgressBar>
+                            <FlexWrapper>
+                                <Icon iconId={'illustrator'}/>
+                                <ProgressLine>
+                                    <PercentLine className={'illustrator'}>
+                                    </PercentLine>
+                                </ProgressLine>
+                            </FlexWrapper>
+                        </ProgressBar>
+                    </Column>
+                    <Column>
+                        <ProgressBar>
+                            <FlexWrapper>
+                                <Icon iconId={'figma'}/>
+                                <ProgressLine>
+                                    <PercentLine className={'figma'}>
+                                    </PercentLine>
+                                </ProgressLine>
+                            </FlexWrapper>
+                        </ProgressBar>
+                    </Column>
+                </TwoColumns>
+            </StyledProgressBarContainer>
+
         </div>
     );
 };
+
+const StyledProgressBarContainer = styled.div`
+   width: 100%;
+`
 
 const TwoColumns = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
+
+    @media (max-width: 635px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 `
 
 const Column = styled.div`
-    flex: 1 1 45%;
+    //flex: 1 1 45%;
     min-width: 270px;
     display: flex;
     flex-direction: column;

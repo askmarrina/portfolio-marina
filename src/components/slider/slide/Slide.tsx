@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import quote from "../../../assets/images/quote-2.png";
 import rating from '../../../assets/images/rating.png'
+import {Theme} from "../../../styles/Theme.tsx";
 
 type SlidePropsType = {
     src: string;
@@ -27,7 +28,8 @@ export const Slide = (props: SlidePropsType) => {
 
 const StyledSlide = styled.div`
     background-color: white;
-    width: 725px;
+    max-width: 725px;
+    //width: 725px;
     min-height: 395px;
     border-radius: 140px 0;
     display: flex;
@@ -37,6 +39,7 @@ const StyledSlide = styled.div`
     box-shadow: 0 54px 104px 0 rgba(0, 0, 0, 0.04);
     position: relative;
     margin-bottom: 40px;
+    padding: 20px;
     &::before {
         content: '';
         display: inline-block;
@@ -44,10 +47,18 @@ const StyledSlide = styled.div`
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        top: 75px;
-        left: 90px;
-        width: 110px;
+        top: 18%;
+        left: 8%;
+        width: 15%;
+        //top: 75px;
+        //left: 90px;
+        max-width: 110px;
         height: 85px;
+        
+    }
+    
+    @media ${Theme.media.mobile} {
+        
     }
     
 `
