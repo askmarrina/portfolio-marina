@@ -109,7 +109,7 @@ const PhotoWrapper = styled.div`
     &::before {
         content: '';
         display: inline-block;
-        width: 621px;
+        width: 595px;
         height: 692px;
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
         background-color: ${Theme.colors.secondaryBg};
